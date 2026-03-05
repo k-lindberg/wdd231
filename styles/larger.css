@@ -1,0 +1,39 @@
+@media only screen and (min-width: 38rem) {
+
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #EEE;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #coursecards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .5rem;
+
+    }
+}
