@@ -106,7 +106,7 @@ function createCourseCard(filteredCourses) {
     filteredCourses.forEach(course => {
         const card = document.createElement("section");
         card.classList.add("course-card");
-        
+
         const title = document.createElement("h3");
 
         title.textContent = `${course.subject} ${course.number}`;
@@ -117,6 +117,8 @@ function createCourseCard(filteredCourses) {
         }
         else {
             title.textContent = `${course.subject} ${course.number}`;
+            card.classList.add("incomplete");
+
         }
          
         card.appendChild(title);

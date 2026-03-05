@@ -137,6 +137,10 @@ section.courses {
     font-size: small;
 }
 
+.course-card.incomplete {
+    background-color: #DDD;
+}
+
 p {
     text-align: center;
     padding: 10px;
