@@ -45,6 +45,7 @@ header img {
 header span {
     font-size: 1.2rem;
     color: var(--secondary-font-color);
+    align-self: center;
 }
 
 /************** Hamburger Navigation ***************/
@@ -138,6 +139,7 @@ section.courses {
 
 p {
     text-align: center;
+    padding: 10px;
 }
 
 .filters {

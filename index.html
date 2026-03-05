@@ -20,7 +20,7 @@
     <header>
         <img src="images/house.svg" alt="Site Logo" width="16" height="16">
         <span>Kristin Lindberg</span>
-        <button id="ham-btn" class="hamburger"></button>
+        <button id="ham-btn" class="hamburger" aria-label="View Navigation"></button>
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
@@ -42,9 +42,9 @@
         <section class="courses">
             <h2>Web Certificate Courses</h2>
             <div class="filters">
-                <button id="all">All</button>
-                <button id="wdd">WDD</button>
-                <button id="cse">CSE</button>
+                <button id="all" aria-label="Show all courses">All</button>
+                <button id="wdd" aria-label="Show WDD courses">WDD</button>
+                <button id="cse" aria-label="Show CSE courses">CSE</button>
             </div>
             <div id="coursecards"></div>
             <p>The total credits for the course(s) listed above is <span id="credit"></span>.</p>
