@@ -1,0 +1,28 @@
+{
+    "family_name": "Lindberg",
+    "move_in_date": "2024-10-03",
+    "number_of_people": 4,
+    "visited_by_bishopbric": true,
+    "family_members": [
+        {
+            "name": "Michael Lindberg",
+            "gender": "Male",
+            "birthdate": "1987-04-04"
+        },
+        {
+            "name": "Kristin Lindberg",
+            "gender": "Female",
+            "birthdate": "1987-04-21"
+        },
+        {
+            "name": "Gavin Lindberg",
+            "gender": "Male",
+            "birthdate": "2011-12-11"
+        },
+        {
+            "name": "Adalynn Lindberg",
+            "gender": "Female",
+            "birthdate": "2014-03-15"
+        }
+    ]
+}
