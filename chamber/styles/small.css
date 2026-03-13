@@ -14,6 +14,17 @@
     padding: 0;
 }
 
+main {
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+main h1 {
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
 header {
     display: grid;
     grid-template-columns: 50px auto 44px;
@@ -102,6 +113,107 @@ header span {
     display: block;
 }
 
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.filters button {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--secondary-font-color);
+    border: solid 1px var(--font-color);
+    border-radius: 3px;
+    padding: 8px;
+    align-items: center;
+}
+
+.filters button.current {
+    background-color: var(--secondary-font-color);
+    color: var(--font-color);
+     
+}
+
+.filters button:hover {
+    background-color: var(--secondary-color);
+    color: var(--secondary-font-color);  
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.grid section {
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px dotted var(--secondary-color);
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section h3 {
+    font-size: 1rem;
+}
+
+.list section:nth-child(even) {
+    background-color: var(--secondary-font-color);
+}    
+
+#cards.grid .business-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: small;
+}
+
+#cards.grid .business-card h2 {
+    display: none;
+}
+
+#cards.grid .business-card img {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#cards.list .business-card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+#cards.list .business-card h2 {
+    display: block;
+    font-weight: normal;
+    font-size: larger;
+}
+
+#cards.list .business-card img {
+    display: none;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -109,6 +221,8 @@ footer {
     padding: 15px;
     text-align: left;
     font-family: var(--body-font);
+    font-size: smaller;
+    border-top: var(--secondary-color) 1px dotted;
 }
 
 footer address {

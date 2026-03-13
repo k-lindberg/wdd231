@@ -4,7 +4,7 @@
             "company_name": "CAG Golf",
             "address": {
                 "street": "960 East 700 South",
-                "city_state": "Brigham City, UT"
+                "city_state": "Brigham City, UT 84302"
             },
             "phone_number": "(801) 691-3894",
             "email": "chrism@pga.com",
@@ -52,7 +52,7 @@
             "company_name": "LegalShield",
             "address": {
                 "street": "111 N Main St.",
-                "city_state": "Saratoga Springs, UT"
+                "city_state": "Saratoga Springs, UT 84045"
             },
             "phone_number": "(385) 222-1008",
             "email": "msjoinusnow@legalshield.com",

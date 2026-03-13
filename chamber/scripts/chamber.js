@@ -7,6 +7,7 @@ const displayBusiness = (businesses) => {
         let card = document.createElement('section');
         card.classList.add("business-card");
         let logo = document.createElement('img');
+        let name = document.createElement('h2')
         let address = document.createElement('p');
         let phoneNumber = document.createElement('p');
         let website = document.createElement('a')
@@ -14,10 +15,11 @@ const displayBusiness = (businesses) => {
         logo.setAttribute('src', business.image);
         logo.setAttribute('alt', `Logo for ${business.company_name}`);
         logo.setAttribute('loading', 'lazy');
-        logo.setAttribute('width', '200');
-        logo.setAttribute('height', '100');
+        logo.setAttribute('width', '150');
+        logo.setAttribute('height', '75');
 
-        address.textContent = `${business.address.street}, ${business.address.city_state}`;
+        name.textContent = business.company_name;
+        address.innerHTML = `${business.address.street}<br>${business.address.city_state}`;
         phoneNumber.textContent = business.phone_number;
 
         website.href = business.website;
@@ -25,6 +27,7 @@ const displayBusiness = (businesses) => {
         website.target = "_blank";
 
         card.appendChild(logo);
+        card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phoneNumber);
         card.appendChild(website);
@@ -40,3 +43,23 @@ async function getBusinessData() {
 }
 
 getBusinessData();
+
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
+const cardsContainer = document.querySelector("#cards");
+
+gridButton.addEventListener("click", () => {
+    cardsContainer.classList.add("grid");
+    cardsContainer.classList.remove("list");
+
+    gridButton.classList.add("current");
+    listButton.classList.remove("current");
+});
+
+listButton.addEventListener("click", () => {
+    cards.classList.add("list");
+    cardsContainer.classList.remove("grid");
+
+    listButton.classList.add("current");
+    gridButton.classList.remove("current");
+});
