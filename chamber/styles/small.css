@@ -144,7 +144,7 @@ header span {
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 5px;
+    gap: 5px;
     align-items: center;
 }
 
@@ -197,6 +197,8 @@ header span {
 #cards.grid .business-card img {
     display: block;
     margin-bottom: 5px;
+    width: 150px;
+    object-fit: contain;
 }
 
 #cards.list .business-card {

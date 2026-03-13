@@ -43,7 +43,10 @@
         grid-template-columns: 2fr 2fr 1fr 2fr;
         text-align: left;
         gap: 5px;
-        margin: 2px;
+    }
+
+    #cards {
+        padding: 15px;
     }
 
     footer {
