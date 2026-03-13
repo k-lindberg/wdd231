@@ -1,0 +1,40 @@
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    .navigation ul {
+        display: flex;  
+        gap: 1rem;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

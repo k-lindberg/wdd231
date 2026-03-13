@@ -1,0 +1,88 @@
+{
+    "businesses": [
+        {
+            "company_name": "CAG Golf",
+            "address": {
+                "street": "960 East 700 South",
+                "city/state": "Brigham City, UT"
+            },
+            "phone_number": "(801) 691-3894",
+            "email": "chrism@pga.com",
+            "website": "https://eaglemountaingc.com/",
+            "image": "https://thechamber.org/wp-content/uploads/2025/06/IMG_1025-1.webp",
+            "membership_level": 1
+        },
+        {
+            "company_name": "Disaster Professionals, LLC",
+            "address": {
+                "street": "3726 E Campus Dr Suite D",
+                "city/state": "Eagle Mountain, UT 84005"
+            },
+            "phone_number": "(801) 789-5700",
+            "email": "contact@disaster.com",
+            "website": "http://disasterprofessionals.com",
+            "image": "https://thechamber.org/wp-content/uploads/2025/06/disaster-professionals-logo.png",
+            "membership_level": 2
+        },
+        {
+            "company_name": "Key Benefits",
+            "address": {
+                "street": "333 N Main St.",
+                "city/state": "Eagle Mountain, UT 84005"
+            },
+            "phone_number": "(585) 500-5577",
+            "email": "contact@keybenefits.com",
+            "website": "https://keybenefit.com/",
+            "image": "https://thechamber.org/wp-content/uploads/2025/06/images-5.jpg",
+            "membership_level": 3
+        },
+        {
+            "company_name": "Lock n’ Load Marketing",
+            "address": {
+                "street": "444 N Main St.",
+                "city/state": "Eagle Mountain, UT 84005"
+            },
+            "phone_number": "(801) 803-9389",
+            "email": "contact@locknload.com",
+            "website": "https://locknloadmarketing.com",
+            "image": "https://thechamber.org/wp-content/uploads/2025/06/Locknload-Marketing.jpg",
+            "membership_level": 1
+        },
+        {
+            "company_name": "LegalShield",
+            "address": {
+                "street": "111 N Main St.",
+                "city/state": "Saratoga Springs, UT"
+            },
+            "phone_number": "(385) 222-1008",
+            "email": "msjoinusnow@legalshield.com",
+            "website": "https://www.legalshield.com/",
+            "image": "https://thechamber.org/wp-content/uploads/2025/06/6675f5690b7556a4bb72be14_LegalShield-Horizonal.png",
+            "membership_level": 2
+        },
+        {
+            "company_name": "CoDev",
+            "address": {
+                "street": "210 N 1200 E #200",
+                "city/state": "Lehi, UT 84043"
+            },
+            "phone_number": "(801) 331-8770",
+            "email": "contact@codev.com",
+            "website": "https://www.codev.com/",
+            "image": "https://thechamber.org/wp-content/uploads/2026/01/Screenshot-2026-01-29-at-9.28.33-AM.png",
+            "membership_level": 3
+        },
+        {
+            "company_name": "Elevate",
+            "address": {
+                "street": "441 E 1750 N Ste A",
+                "city/state": "Vineyard, UT 84059"
+            },
+            "phone_number": "(855) 333-5388",
+            "email": "swag@elevatepromo.com",
+            "website": "http://elevatepromo.com",
+            "image": "https://thechamber.org/wp-content/uploads/2025/06/360_F_382290882_2ItfsctVZeSRDBtLABzb9LiEBYwME8j6.jpg",
+            "membership_level": 1
+        }
+    ]
+}

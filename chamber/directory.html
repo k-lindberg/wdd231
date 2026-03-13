@@ -10,13 +10,67 @@
     <meta property="og:description" content="Eagle Mountain Chamber of Commerce Directory Page, with a list of seven Eagle Mountain Businesses">
     <meta property="og:image" content="https://k-lindberg.github.io/wdd231/chamber/images/eagle-mountain.jpg">
     <meta property="og:url" content="https://k-lindberg.github.io/wdd231/chamber/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Marcellus&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
 </head>
 <body>
-  
+    <header>
+        <img src="images/eagle-logo.png" alt="Site Logo" width="16" height="16">
+        <span>Eagle Mountain Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="View Navigation"></button>
+    
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero.webp" media="(min-width: 1000px)">
+                <img src="images/small-hero.webp" alt="Eagle Mountain" width="1280" height="640">
+            </picture>
+        </div>
+        <h1>Business Directory</h1>
+        <div class="filters">
+            <button id="grid" aria-label="Show Grid">Grid</button>
+            <button id="list" aria-label="Show List">List</button>
+        </div>
+        <div class="cards"></div>
+    </main>
+    <footer>
+        <address>
+            <strong>Eagle Mountain Chamber of Commerce</strong><br>
+            1680 Heritage Dr.<br>
+            Eagle Mountain, UT 84005<br>
+            info@thechamber.org<br>
+            (385) 482-2555
+        </address>
+        <div class="social">
+            <a href="https://www.facebook.com/uvchamber/" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+            <a href="https://www.instagram.com/utah_valley_chamber/" target="_blank"><img src="images/instagram.svg" alt="instagram" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/utah-valley-chamber-of-commerce-40311b14/" target="_blank"><img src="images/linkedin.svg" alt="linked in" width="16" height="16"></a>
+        </div>
+        <div class="project-footer">
+            <p>WDD231 Class Project</p>
+            <p>Kristin Lindberg</p>
+            <p>&copy;<span id="currentyear"></span> Eagle Mountain Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
 </body>
 </html>
