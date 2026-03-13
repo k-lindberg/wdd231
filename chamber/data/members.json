@@ -4,7 +4,7 @@
             "company_name": "CAG Golf",
             "address": {
                 "street": "960 East 700 South",
-                "city/state": "Brigham City, UT"
+                "city_state": "Brigham City, UT"
             },
             "phone_number": "(801) 691-3894",
             "email": "chrism@pga.com",
@@ -16,7 +16,7 @@
             "company_name": "Disaster Professionals, LLC",
             "address": {
                 "street": "3726 E Campus Dr Suite D",
-                "city/state": "Eagle Mountain, UT 84005"
+                "city_state": "Eagle Mountain, UT 84005"
             },
             "phone_number": "(801) 789-5700",
             "email": "contact@disaster.com",
@@ -28,7 +28,7 @@
             "company_name": "Key Benefits",
             "address": {
                 "street": "333 N Main St.",
-                "city/state": "Eagle Mountain, UT 84005"
+                "city_state": "Eagle Mountain, UT 84005"
             },
             "phone_number": "(585) 500-5577",
             "email": "contact@keybenefits.com",
@@ -40,7 +40,7 @@
             "company_name": "Lock n’ Load Marketing",
             "address": {
                 "street": "444 N Main St.",
-                "city/state": "Eagle Mountain, UT 84005"
+                "city_state": "Eagle Mountain, UT 84005"
             },
             "phone_number": "(801) 803-9389",
             "email": "contact@locknload.com",
@@ -52,7 +52,7 @@
             "company_name": "LegalShield",
             "address": {
                 "street": "111 N Main St.",
-                "city/state": "Saratoga Springs, UT"
+                "city_state": "Saratoga Springs, UT"
             },
             "phone_number": "(385) 222-1008",
             "email": "msjoinusnow@legalshield.com",
@@ -64,7 +64,7 @@
             "company_name": "CoDev",
             "address": {
                 "street": "210 N 1200 E #200",
-                "city/state": "Lehi, UT 84043"
+                "city_state": "Lehi, UT 84043"
             },
             "phone_number": "(801) 331-8770",
             "email": "contact@codev.com",
@@ -76,7 +76,7 @@
             "company_name": "Elevate",
             "address": {
                 "street": "441 E 1750 N Ste A",
-                "city/state": "Vineyard, UT 84059"
+                "city_state": "Vineyard, UT 84059"
             },
             "phone_number": "(855) 333-5388",
             "email": "swag@elevatepromo.com",
