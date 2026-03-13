@@ -48,6 +48,9 @@ const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
 const cardsContainer = document.querySelector("#cards");
 
+cardsContainer.classList.add("grid");
+gridButton.classList.add("current");
+
 gridButton.addEventListener("click", () => {
     cardsContainer.classList.add("grid");
     cardsContainer.classList.remove("list");
