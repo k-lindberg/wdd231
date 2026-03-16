@@ -2,6 +2,12 @@ const url = 'https://raw.githubusercontent.com/k-lindberg/wdd231/main/chamber/da
 
 const cards = document.querySelector('#cards');
 
+const levels = {
+    1: "Member",
+    2: "Silver",
+    3: "Gold"
+};
+
 const displayBusiness = (businesses) => {
     businesses.forEach((business) => {
         let card = document.createElement('section');
@@ -10,6 +16,7 @@ const displayBusiness = (businesses) => {
         let name = document.createElement('h2')
         let address = document.createElement('p');
         let phoneNumber = document.createElement('p');
+        let membership = document.createElement('p');
         let website = document.createElement('a')
 
         logo.setAttribute('src', business.image);
@@ -21,6 +28,7 @@ const displayBusiness = (businesses) => {
         name.textContent = business.company_name;
         address.innerHTML = `${business.address.street}<br>${business.address.city_state}`;
         phoneNumber.textContent = business.phone_number;
+        membership.textContent = `Membership: ${levels[business.membership_level]}`;
 
         website.href = business.website;
         website.textContent = business.website;
@@ -30,6 +38,7 @@ const displayBusiness = (businesses) => {
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phoneNumber);
+        card.appendChild(membership);
         card.appendChild(website);
 
         cards.appendChild(card);
