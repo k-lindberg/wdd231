@@ -9,7 +9,7 @@
             "phone_number": "(801) 691-3894",
             "email": "chrism@pga.com",
             "website": "https://eaglemountaingc.com/",
-            "image": "cag-golf.webp",
+            "image": "images/cag-golf.webp",
             "membership_level": 1
         },
         {
@@ -21,7 +21,7 @@
             "phone_number": "(801) 789-5700",
             "email": "contact@disaster.com",
             "website": "http://disasterprofessionals.com",
-            "image": "disaster-professionals.png",
+            "image": "images/disaster-professionals.png",
             "membership_level": 2
         },
         {
@@ -33,7 +33,7 @@
             "phone_number": "(585) 500-5577",
             "email": "contact@keybenefits.com",
             "website": "https://keybenefit.com/",
-            "image": "key-benefit.jpg",
+            "image": "images/key-benefit.jpg",
             "membership_level": 3
         },
         {
@@ -45,7 +45,7 @@
             "phone_number": "(801) 803-9389",
             "email": "contact@locknload.com",
             "website": "https://locknloadmarketing.com",
-            "image": "locknload.jpg",
+            "image": "images/locknload.jpg",
             "membership_level": 1
         },
         {
@@ -57,7 +57,7 @@
             "phone_number": "(385) 222-1008",
             "email": "msjoinusnow@legalshield.com",
             "website": "https://www.legalshield.com/",
-            "image": "legal-shield.png",
+            "image": "images/legal-shield.png",
             "membership_level": 2
         },
         {
@@ -69,7 +69,7 @@
             "phone_number": "(801) 331-8770",
             "email": "contact@codev.com",
             "website": "https://www.codev.com/",
-            "image": "codev.png",
+            "image": "images/codev.png",
             "membership_level": 3
         },
         {
@@ -81,7 +81,7 @@
             "phone_number": "(855) 333-5388",
             "email": "swag@elevatepromo.com",
             "website": "http://elevatepromo.com",
-            "image": "elevate.jpg",
+            "image": "images/elevate.jpg",
             "membership_level": 1
         }
     ]
