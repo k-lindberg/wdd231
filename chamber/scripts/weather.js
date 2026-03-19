@@ -45,12 +45,18 @@ async function getForecast() {
     }
 }
 
+function toTitleCase(str) {
+    return str.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+}
+
 function displayResults(data) {
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', data.weather[0].description);
+    weatherIcon.setAttribute('width', 75)
+    weatherIcon.setAttribute('height', 75)
     currentTemp.textContent = Math.round(data.main.temp);
-    desc.textContent = data.weather[0].description;
+    desc.textContent = toTitleCase(data.weather[0].description);
     humidity.textContent = data.main.humidity;
 
     function convertTime(unix) {
@@ -106,6 +112,10 @@ function buildThreeDayForecast(data) {
     dayNames.forEach((day, index) => {
         const temps = days[day];
 
+        if (index === 0) {
+            day = "Today";
+        }
+
         let dayHigh = temps[0];
         for (let i = 1; i < temps.length; i++) {
             if (temps[i] > dayHigh) {
@@ -114,7 +124,7 @@ function buildThreeDayForecast(data) {
         }
 
         document.querySelector(`#day${index + 1}-name`).textContent = day;
-        document.querySelector(`#day${index + 1}-temp`).textContent = Math.round(dayHigh);
+        document.querySelector(`#day${index + 1}-temp`).innerHTML = `<strong>${Math.round(dayHigh)}</strong>`;
     });
 }
 

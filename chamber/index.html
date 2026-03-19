@@ -23,10 +23,10 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/chamber.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
 </head>
 
 <body>
@@ -50,28 +50,38 @@
                 <source srcset="images/hero.webp" media="(min-width: 1000px)">
                 <img src="images/small-hero.webp" alt="Eagle Mountain" width="1280" height="640">
             </picture>
+            <a href="join.html">Join the Chamber</a>
         </div>
+
         <h1>Home</h1>
         
-        <div class="weather">
-            <h2>Current Weather</h2>
-            <img id="weather-icon" src="" alt="">
-            <p><strong><span id="current-temp"></span></strong>&deg;F</p>
-            <p><span id="desc"></span></p>
-            <p>High: <span id="high"></span>&deg;</p>
-            <p>Low: <span id="low"></span>&deg;</p>
-            <p>Humidity: <span id="humidity"></span>%</p>
-            <p>Sunrise: <span id="sunrise"></span></p>
-            <p>Sunset: <span id="sunset"></span></p>    
-        </div>
+        <section class="info">
+            <div class="events">
+                <h2>Events</h2>
+                <p>Current events in Eagle Mountain</p>
+            </div>
 
-        <div class="forecast">
-            <p><span id="day1-name"></span>: <span id="day1-temp"></span>°F</p>
-            <p><span id="day2-name"></span>: <span id="day2-temp"></span>°F</p>
-            <p><span id="day3-name"></span>: <span id="day3-temp"></span>°F</p>
-        </div>
+            <div class="weather">
+                <h2>Current Weather</h2>
+                <img id="weather-icon" src="" alt="">
+                <p><strong><span id="current-temp"></span></strong>&deg;F</p>
+                <p><span id="desc"></span></p>
+                <p>High: <span id="high"></span>&deg;</p>
+                <p>Low: <span id="low"></span>&deg;</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Sunrise: <span id="sunrise"></span></p>
+                <p>Sunset: <span id="sunset"></span></p>    
+            </div>
 
-        <div id="spotlight"></div>
+            <div class="forecast">
+                <h2>Weather Forecast</h2>
+                <p><span id="day1-name"></span>: <span id="day1-temp"></span>°F</p>
+                <p><span id="day2-name"></span>: <span id="day2-temp"></span>°F</p>
+                <p><span id="day3-name"></span>: <span id="day3-temp"></span>°F</p>
+            </div>
+        </section>
+
+        <section id="spotlights" class="cards"></section>
 
     </main>
     <footer>
