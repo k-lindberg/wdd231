@@ -167,6 +167,37 @@ p {
     color: var(--secondary-font-color);
 }
 
+dialog {
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+dialog h3 {
+    padding: .65rem;
+}
+
+
+dialog p {
+    text-align: left;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px;
+    border: 1px solid rgb(0 0 0 / 10%);
+}
+
 /***************** Footer ****************/
 footer {
     background-color: #EEE;
