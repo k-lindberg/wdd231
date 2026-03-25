@@ -72,7 +72,16 @@
 
     #spotlights .spotlight-card {
         flex-direction: column;
+    }
 
+    .membership-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+        width: 300px;
+        padding: 20px;
     }
 
     footer {
