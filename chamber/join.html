@@ -25,6 +25,7 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/timestamp.js" defer></script>
+    <script src="scripts/modal.js" type="module"></script>
 </head>
 
 <body>
@@ -86,74 +87,34 @@
                 <h3>Membership Levels</h3>
                 <section class="card">
                     <h4>Non-Profit Membership Level</h4>
-                    <button type="button" class="learn-more" data-modal="np">Learn More</button>
+                    <button id="openButton1">Learn More</button>
                 </section>
 
                 <section class="card">
                     <h4>Bronze Membership Level</h4>
-                    <button type="button" class="learn-more" data-modal="bronze">Learn More</button>
+                    <button id="openButton2">Learn More</button>
                 </section>
 
                 <section class="card">
                     <h4>Silver Membership Level</h4>
-                    <button type="button" class="learn-more" data-modal="silver">Learn More</button>
+                    <button id="openButton3">Learn More</button>
                 </section>
 
                 <section class="card">
                     <h4>Gold Membership Level</h4>
-                    <button type="button" class="learn-more" data-modal="gold">Learn More</button>
+                    <button id="openButton4">Learn More</button>
                 </section>
 
             </section>
 
         </div>
 
-        <dialog id="np">
-            <h2>Non-Profit Membership | $0 / year</h2>
-            <ul>
-                <li>Inclusion in the Chamber business directory</li>
-                <li>Access to member-only newsletters and announcements</li>
-                <li>Discounted rates for select community events</li>
-                <li>Access to monthly networking events</li>
-                <li>Eligibility for nonprofit-specific training workshops</li>
-            </ul>
-            <button id="closeModal">Close</button>
-        </dialog>
-
-        <dialog id="bronze">
-            <h2>Bronze Membership| $200 / year</h2>
-            <ul>
-                <li>All Non-Profit benefits</li>
-                <li>10% discount on Chamber sponsored events</li>
-                <li>One free advertising spotlight per year</li>
-                <li>Access to small business training sessions</li>
-                <li>Social media welcome post on Chamber channels</li>
-            </ul>
-            <button id="closeModal">Close</button>
-        </dialog>
-
-        <dialog id="silver">
-            <h2>Silver Membership | $400 / year</h2>
-            <ul>
-                <li>All Bronze benefits</li>
-                <li>20% discount on Chamber events and workshops</li>
-                <li>Two free advertising spotlights per year</li>
-                <li>Featured listing in the Chamber Newsletter</li>
-                <li>Access to quarterly leadership roundtables</li>
-            </ul>
-            <button id="closeModal">Close</button>
-        </dialog>
-
-        <dialog id="gold">
-            <h2>Gold Membership | $700 / year</h2>
-            <ul>
-                <li>All Silver benefits</li>
-                <li>30% on all Chamber events</li>
-                <li>Unlimited advertising spotlights</li>
-                <li>Complimentary booth at the annual business expo</li>
-                <li>Invitation to exclusive executive networking events</li>
-            </ul>
-            <button id="closeModal">Close</button>
+        <dialog id="dialogBox">
+            <div>
+                <h2></h2>
+                <button id="closeButton">X</button>
+            </div>
+            <p></p>
         </dialog>
 
     </main>
