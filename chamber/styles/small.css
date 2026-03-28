@@ -386,6 +386,17 @@ input[type=submit] {
     width: 250px;
     background-color: #374872;
     color: var(--secondary-font-color);
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 .card button {
@@ -399,15 +410,6 @@ input[type=submit] {
     border: 1px solid var(--primary-color);
     border-radius: 3px;
     cursor: pointer;
-}
-
-.card {
-    animation: fadeIn 2s ease-out;
-}
-
-@keyframes fadeIn {
-    from {opacity: 0}
-    to {opacity: 1}
 }
 
 dialog {
