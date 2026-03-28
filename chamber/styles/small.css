@@ -303,17 +303,19 @@ form {
     margin: 1.1rem;
 }
 
-form h3 {
+form h2 {
     font-size: 1.1rem;
     padding-bottom: 5px;
 }
 
-.form-section h3 {
-    margin-left: 15px;
-}
-
-.card-section h3 {
-    margin-left: 20px;
+.form-section h2,
+.card-section h2 {
+    margin-left: 10px;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 label {
