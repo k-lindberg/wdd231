@@ -1,0 +1,43 @@
+:root {
+    --heading-font: "Kaushan Script", cursive;
+    --body-font: "Lato", sans-serif;
+    --background-color: #F5F5F5;
+    --primary-color: #40B5B5;
+    --secondary-color: #FF9B70;
+    --font-color: #1A1A1E;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--font-color);
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    padding: 5px 10px;
+    max-width: max-content;
+    margin: 5px;
+}
+
+h2 {
+    background-color: var(--secondary-color);
+    margin: 10px;
+}
+
+p, li {
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+
+img {
+    max-width: 900px;
+    margin: 10px;
+    border: var(--primary-color) solid 5px;
+}
