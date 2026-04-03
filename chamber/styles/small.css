@@ -462,6 +462,10 @@ dialog li {
 /***** DISCOVER *****/
 
 #itemsection section {
+    background-color: var(--secondary-font-color);
+    border: var(--primary-color) 1px solid;
+    border-radius: 10px;
+    margin: 5px;
     display: grid;
     grid-template-areas: 
     "title"
@@ -476,21 +480,34 @@ dialog li {
 }
 
 #itemsection section figure img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
     grid-area: image;
 }
 
 #itemsection section address {
+    margin: 10px;
+    
     grid-area: address;
 }
 
 #itemsection section p {
+    margin: 10px;
+    
     grid-area: desc;
 }
 
 #itemsection section button {
+    margin: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-font-color);
+    padding: 8px;
+    border: 1px solid var(--font-color);
+    border-radius: 5px;
+    
     grid-area: button;
 }
-
 
 /***** FOOTER *****/
 
@@ -527,3 +544,4 @@ footer address {
     width: 44px;
     height: 44px;
 }
+

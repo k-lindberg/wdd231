@@ -13,6 +13,7 @@ items.forEach(item => {
 
     title.textContent = item.name;
 
+    img.classList.add("hover");
     img.src = item.image;
     img.alt = item.name;
     img.loading = "lazy";

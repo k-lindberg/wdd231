@@ -5,4 +5,12 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    #itemsection section p,
+    #itemsection section address {
+        font-size: 1rem;
+    }
+
+    #itemsection section figure img {
+        width: 150px;
+    }
 }
