@@ -1,0 +1,139 @@
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main h1 {
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .hero a {
+        bottom: 25px;
+        right: 25px;
+        font-size: 1.3rem;
+        padding: 8px 10px;
+        font-weight: bold;
+    }
+
+    .info {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        margin: 15px;
+    }
+
+    #cards.list .business-card {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr 2fr;
+        text-align: left;
+        gap: 5px;
+    }
+
+    #cards {
+        padding: 15px;
+    }
+
+    #spotlights {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 15px;
+    }
+
+    #spotlights .spotlight-card {
+        flex-direction: column;
+    }
+
+    .membership-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+        width: 300px;
+        padding: 20px;
+    }
+
+    .thank-you p {
+        padding-left: 20px;
+    }
+
+    #itemsection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    #itemsection section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title title"
+            "image desc"
+            "image address"
+            "button button";
+    }
+
+    #itemsection section h2 {
+        grid-area: title;
+    }
+
+    #itemsection section figure img {
+        grid-area: image;
+    }
+
+    #itemsection section p {
+        grid-area: desc;
+    }
+
+    #itemsection section address {
+        grid-area: address;
+    }
+
+    #itemsection section button {
+        grid-area: button;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .social {
+        margin: 0;
+    }
+
+    #visits {
+        text-align: center;
+    }
+}

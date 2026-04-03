@@ -10,14 +10,14 @@ const levels = {
 
 const displaySpotlights = (members) => {
     members.forEach((member) => {
-        let card = document.createElement('section');
+        const card = document.createElement('section');
         card.classList.add("spotlight-card");
-        let logo = document.createElement('img');
-        let name = document.createElement('h3')
-        let address = document.createElement('p');
-        let phoneNumber = document.createElement('p');
-        let membership = document.createElement('p');
-        let website = document.createElement('a')
+        const logo = document.createElement('img');
+        const name = document.createElement('h3')
+        const address = document.createElement('p');
+        const phoneNumber = document.createElement('p');
+        const membership = document.createElement('p');
+        const website = document.createElement('a')
 
         logo.setAttribute('src', member.image);
         logo.setAttribute('alt', `Logo for ${member.company_name}`);

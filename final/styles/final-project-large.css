@@ -1,0 +1,22 @@
+@media (min-width: 1024px) {
+    header, main, footer {
+        max-width: 1200px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .section2 {
+        margin: 30px;
+        gap: 30px;
+    }
+
+    .cards {
+        gap: 30px;
+    }
+}

@@ -1,0 +1,62 @@
+@media (min-width: 740px) {
+    
+    header, main, footer {
+        width: 90%;
+        max-width: 900px;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .section2 {
+        justify-content: space-between;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    form {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    
+    .filter-row {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    #filters {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 10px;
+        width: auto;
+    }
+
+    #filters button {
+        font-size: 1rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+}

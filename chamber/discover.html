@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Eagle Mountain Chamber of Commerce</title>
+    <title>Discover - Eagle Mountain Chamber of Commerce</title>
     <meta name="author" content="Kristin Lindberg">
     <meta name="description"
         content="WDD 231 - Web Frontend Development 1, Eagle Mountain Chamber of Commerce page project">
-    <meta property="og:title"
-        content="WDD 231, Eagle Mountain Chamber of Commerce Home Page">
+    <meta property="og:title" content="WDD 231, Eagle Mountain Chamber of Commerce Discover Page">
     <meta property="og:description"
-        content="Eagle Mountain Chamber of Commerce Home Page, events, weather, and business spotlights">
+        content="Eagle Mountain Chamber of Commerce Discover Page, learn more about the city of Eagle Mountain">
     <meta property="og:image" content="https://k-lindberg.github.io/wdd231/chamber/images/eagle-mountain.jpg">
     <meta property="og:url" content="https://k-lindberg.github.io/wdd231/chamber/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,11 +21,11 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlights.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
     <script src="scripts/visits.js" defer></script>
 </head>
 
@@ -38,10 +37,10 @@
 
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li class="current"><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
@@ -54,35 +53,9 @@
             <a href="join.html">Join the Chamber</a>
         </div>
 
-        <h1>Home</h1>
-        
-        <section class="info">
-            <div class="events">
-                <h2>Events</h2>
-                <p>Current events in Eagle Mountain</p>
-            </div>
+        <h1>Discover</h1>
 
-            <div class="weather">
-                <h2>Current Weather</h2>
-                <img id="weather-icon" src="#" alt="#">
-                <p><strong><span id="current-temp"></span></strong>&deg;F</p>
-                <p><span id="desc"></span></p>
-                <p>High: <span id="high"></span>&deg;</p>
-                <p>Low: <span id="low"></span>&deg;</p>
-                <p>Humidity: <span id="humidity"></span>%</p>
-                <p>Sunrise: <span id="sunrise"></span></p>
-                <p>Sunset: <span id="sunset"></span></p>    
-            </div>
-
-            <div class="forecast">
-                <h2>Weather Forecast</h2>
-                <p><span id="day1-name"></span>: <span id="day1-temp"></span>°F</p>
-                <p><span id="day2-name"></span>: <span id="day2-temp"></span>°F</p>
-                <p><span id="day3-name"></span>: <span id="day3-temp"></span>°F</p>
-            </div>
-        </section>
-
-        <section id="spotlights" class="cards"></section>
+        <section id="itemsection" class="discover-cards"></section>
 
     </main>
     <footer>

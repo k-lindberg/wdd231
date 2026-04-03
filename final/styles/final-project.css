@@ -1,0 +1,352 @@
+:root {
+    --heading-font: "Kaushan Script", "Brush Script MT", cursive;
+    --body-font: "Lato", sans-serif;
+    --background-color: #FAFAFA;
+    --secondary-background: #F5F4EF;
+    --primary-color: #1BB6BB;
+    --secondary-color: #FF9B70;
+    --font-color: #1A1A1E;
+    --secondary-font: #0C5C5F;
+}   
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--font-color);
+}
+
+header,
+main,
+footer {
+    width: 400px;
+    margin: 0 auto;
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    padding: 10px;
+    text-align: center;
+    font-size: x-large;
+    font-family: var(--heading-font);
+    border-bottom: var(--secondary-color) solid 20px;
+    position: relative;
+}
+
+header img {
+    display: block;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero h1 {
+    font-family: var(--heading-font);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.hero p {
+    font-family: var(--body-font);
+    text-align: center;
+    padding: 18px;
+    color: var(--font-color);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-bottom: var(--secondary-color) solid 5px;
+}
+
+img.weather-icon {
+    width: 3em;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    border-bottom: none;
+}
+
+h2 {
+    text-align: center;
+    padding: 15px;
+    font-family: var(--heading-font);
+}
+
+.popular p {
+    text-align: center;
+    margin: 0 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: black;
+    font-family: var(--body-font);
+    padding: 15px;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    color: var(--font-color);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "⨉";
+    color: var(--font-color);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    background-color: #333;
+    color: var(--background-color);
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--background-color);
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+.open a {
+    display: block;
+}
+
+.active {
+    background-color: #545454;
+    font-weight: 700;
+}
+
+a img {
+    cursor: pointer;
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+}
+
+.section2 a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.subsection, .activity-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    border: var(--secondary-color) solid 1px;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: var(--secondary-background);
+}
+
+.subsection img {
+    background-color: var(--background-color);
+    border-radius: 5px;
+    margin-top: 5px;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    padding: 15px;
+}
+
+.cards section {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    border: var(--primary-color) dotted 2px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    background: var(--secondary-background);
+}
+
+.cards section h3 {
+    font-family: var(--heading-font);
+    font-size: x-large;
+    padding: 5px;
+    color: var(--secondary-font);
+}
+
+.cards section p {
+    padding: 12px;
+}
+
+.cards section img {
+    margin-top: 15px;
+    padding: 3px;
+    box-shadow: 0 0 12px rgba(255, 155, 112, 0.6);
+}
+
+.cards section a {
+    text-decoration: none;
+    color: var(--font-color);
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    padding: 10px 14px;
+    margin: 12px 0 20px 0;
+    display: inline-block;
+    font-weight: 900;
+    box-shadow: 1px 1px 4px #999;
+}
+ 
+.filter-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+#filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#filters button {
+    background-color: var(--secondary-background);
+    border: var(--font-color) solid 1px;
+    border-radius: 2px;
+    margin: 5px;
+    padding: 4px;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.activities h2 {
+    font-size: xx-large;
+}
+
+.activity-card {
+    margin: 10px;
+}
+
+.activity-card h3 {
+    font-family: var(--heading-font);
+    font-size: x-large;
+    padding: 10px;
+}
+.activity-card img {
+    border-radius: 5px;
+}
+
+form {
+    border: var(--primary-color) dotted 2px;
+    background-color: var(--secondary-background);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+form h2{
+    padding: 20px;
+}
+
+form .checkbox {
+    background-color: var(--background-color);
+    padding: 5px;
+    box-shadow: 1px 1px 4px #999;
+    border: var(--font-color) solid 1px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 5px;
+    border-radius: 5px;
+    border: var(--font-color) solid 1px;
+    margin-bottom: 12px;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.checkbox {
+    border-radius: 6px;
+    display: grid;
+}
+
+form input[type="checkbox"] {
+    transform: scale(2);
+    margin: 10px;
+}
+
+.checkbox .note {
+    font-size: smaller;
+    color: #444;
+    padding-bottom: 5px;
+}
+
+fieldset {
+    position: relative;
+    margin-top: 22px;
+}
+
+legend {
+    position: absolute;
+    top: -25px;
+}
+
+input[type="submit"] {
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    border-radius: 6px;
+    padding: 20px;
+    width: 96%;
+    max-width: 400px;
+    margin: 2%;
+    margin-top: 20px;
+    box-shadow: 1px 1px 4px #999;
+    font-size: large;
+    font-weight: 700;
+}
+
+footer a {
+    color: black;
+}

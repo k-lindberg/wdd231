@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel to Oʻahu, Hawaii</title>
+    <meta name="author" content="Kristin Lindberg">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Kristin Lindberg, Final Project">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/final-project.css">
+    <link rel="stylesheet" href="styles/final-project-medium.css">
+    <link rel="stylesheet" href="styles/final-project-large.css">
+    <script src="scripts/final-project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/hibiscus.webp" alt="Hibiscus Line Art" loading="lazy" width="75" height="75">
+        <button id="menu" aria-label="Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="beaches.html" class="active" id="beaches">Beaches</a></li>
+                <li><a href="activities.html" id="activities">Activites</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Travel Oʻahu</h1>
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <img src="images/hero-small.webp" alt="Hawaii" width="1500" height="750">
+            </picture>
+        </section>
+
+        <section id="beaches">
+            <h2>Beaches of Oʻahu</h2>
+            <div class="filter-row">
+                <p class="filter">Filters:</p>
+                <div id="filters">
+                    <button data-filter="all">All</button>
+                    <button data-filter="north">North Shore</button>
+                    <button data-filter="east">Windward Coast (Eastside)</button>
+                    <button data-filter="west">Leeward Coast (Westside)</button>
+                    <button data-filter="south">South Shore</button>
+                </div>
+            </div>
+
+            <div id="beachList"class="cards"></div>
+        </section>
+
+    </main>
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span> | Kristin Lindberg | Utah
+        </p>
+        <p class="highlight">Last Modification: <span id="lastmodified"></span></p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+</body>
+
+</html>

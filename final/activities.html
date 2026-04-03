@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel to Oʻahu, Hawaii</title>
+    <meta name="author" content="Kristin Lindberg">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Kristin Lindberg, Final Project">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/final-project.css">
+    <link rel="stylesheet" href="styles/final-project-medium.css">
+    <link rel="stylesheet" href="styles/final-project-large.css">
+    <script src="scripts/final-project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/hibiscus.webp" alt="Hibiscus Line Art" loading="lazy" width="75" height="75">
+        <button id="menu" aria-label="Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="beaches.html" id="beaches">Beaches</a></li>
+                <li><a href="activities.html" class="active" id="activities">Activites</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Travel Oʻahu</h1>
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <img src="images/hero-small.webp" alt="Hawaii" loading="lazy" width="1500" height="750">
+            </picture>
+        </section>
+
+        <section class="activities">
+            <h2>Fun Activities to Experience on Oʻahu</h2>
+
+            <div class="activity-card">
+                <img src="images/dole-plantation.webp" alt="Dole Plantation" loading="lazy" width="125" height="75">
+                <h3>Dole Plantation</h3>
+                <p>Originally operated as a fruit stand beginning in 1950, Dole Plantation opened to the public as Hawaii’s
+                    “Pineapple Experience” in 1989. Today, Dole Plantation is one of Oahu’s most popular visitor attractions and
+                    welcomes more than one million visitors a year. Dole Plantation provides enjoyable activities for the entire
+                    family, including the Pineapple Express Train Tour, the Plantation Garden Tour, and the Pineapple Garden Maze.
+                    Also popular are informational displays and presentations, as well as our plantation country store offering a
+                    wide variety of Dole Plantation gifts, local favorites, foods and refreshments including the world-famous Dole
+                    Soft Serve!</p>
+            </div>
+            
+            <div class="activity-card">
+                <img src="images/jurassic.webp" alt="Jurassic Park Tour" loading="lazy" width="125" height="75">
+                <h3>Jurassic Valley Adventure Tour</h3>
+                <p>If you came all this way, why not see it all? This adventure will allow you to see everything in “Jurassic Valley.” Your small-group tour in open-air vehicles with 16 guests or fewer will cover many miles over your 2.5-hour excursion. See everything from Jurassic World movie sets and other popular movie sites to amazing rainforests and waterfalls with ancient fish ponds, plus so much more. You will love every bumpy minute!</p>
+            </div>
+
+            <div class="activity-card">
+                <img src="images/laie-temple.webp" alt="Laie Hawaii Temple" loading="lazy" width="125" height="75">
+                <h3>Laie Hawaiʻi Temple Visitors’ Center</h3>
+                <p>Enjoy a tranquil moment during your busy sightseeing schedule. Enjoy the lush gardens on the Laie Hawaii Temple grounds, then come inside the visitors’ center to learn more about Jesus Christ and the purpose of temples.</p>
+            </div>
+
+            <div class="activity-card">
+                <img src="images/pcc.webp" alt="Polynesian Cultural Center" loading="lazy" width="125" height="75">
+                <h3>Polynesian Cultural Center</h3>
+                <p>Immerse yourself in the rich traditions of six Pacific Island cultures as you wander through authentic Island
+                    Villages while participating in exciting cultural presentations and fun hands-on activities. Enjoy the ALI’I
+                    LŪʻAU, featuring a traditional Hawaiian feast of kalua pork, and other island specialties. Enjoy the beauty of
+                    Hawaiian hula, live music, and a royal procession. Or choose the GATEWAY BUFFET: A fusion of Pacific and Asian
+                    flavors held in a grand hall lined with murals of a Hawaiian welcome. Experience the power of “Hā: Breath of
+                    Life,” an action-packed story of passion ignited by fire, song, and dance featuring over 100 Polynesian
+                    performers from across the Pacific.</p>
+            </div>
+
+        </section>
+
+        <form>
+            <h2>What activities are you most interested in?</h2>
+            <div>
+                <label for="username" class="inline-label" required>Name *</label>
+            </div>
+            <input type="text" id="username" name="username">
+
+            <div>
+                <label for="email" class="inline-label" required>Email *</label>
+            </div>
+            <input type="email" id="email" name="email">
+        
+            <fieldset class="checkbox">
+                <legend>Activities</legend>
+                <p class="note">(Check all activities that you would like to learn more about)</p>
+                
+                <label for="activity1">
+                    <input type="checkbox" id="activity1" name="activity" value="Dole">
+                    Dole Plantation
+                </label>
+                <label for="activity2">
+                    <input type="checkbox" id="activity2" name="activity" value="Jurassic">
+                    Jurassic Valley Adventure Tour
+                </label>
+                <label for="activity3">
+                    <input type="checkbox" id="activity3" name="activity" value="Temple">
+                    Laie Hawaiʻi Temple Visitors’ Center
+                </label>
+                <label for="activity4">
+                    <input type="checkbox" id="activity4" name="activity" value="PCC">
+                    Polynesian Cultural Center
+                </label>
+            </fieldset>
+            
+            <input type="submit" value="Request More Info">  
+        </form>
+
+    </main>
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span> | Kristin Lindberg | Utah
+        </p>
+        <p class="highlight">Last Modification: <span id="lastmodified"></span></p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+</body>
+
+</html>
