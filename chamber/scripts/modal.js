@@ -1,4 +1,4 @@
-import {levels} from '../data/membership.js'
+import {levels} from '../data/membership.mjs'
 
 const dialogBox = document.querySelector('#dialogBox');
 const title = document.querySelector('#dialogBox h2');

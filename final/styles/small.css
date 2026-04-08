@@ -23,78 +23,23 @@ body {
 header,
 main,
 footer {
-    width: 400px;
+    max-width: 400px;
     margin: 0 auto;
     background-color: var(--background-color);
 }
 
-header {
-    background-color: var(--primary-color);
-    color: var(--font-color);
-    padding: 10px;
-    text-align: center;
-    font-size: x-large;
-    font-family: var(--heading-font);
-    border-bottom: var(--secondary-color) solid 20px;
-    position: relative;
-}
-
-header img {
-    display: block;
-}
-
-.hero {
-    position: relative;
-}
-
-.hero h1 {
-    font-family: var(--heading-font);
-    text-align: center;
-    padding: 10px 0;
-}
-
-.hero p {
-    font-family: var(--body-font);
-    text-align: center;
-    padding: 18px;
-    color: var(--font-color);
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-    border-bottom: var(--secondary-color) solid 5px;
-}
-
-img.weather-icon {
-    width: 3em;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 5px;
-    border-bottom: none;
+h1 {
+    color: var(--secondary-font);
 }
 
 h2 {
     text-align: center;
     padding: 15px;
     font-family: var(--heading-font);
+    color: var(--secondary-font);
 }
 
-.popular p {
-    text-align: center;
-    margin: 0 20px;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--primary-color);
-    color: black;
-    font-family: var(--body-font);
-    padding: 15px;
-}
+/***** NAVIGATION *****/
 
 #menu {
     font-size: 1.5rem;
@@ -151,6 +96,54 @@ a img {
     cursor: pointer;
 }
 
+/***** HEADER *****/
+
+header {
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    padding: 10px;
+    text-align: center;
+    font-size: x-large;
+    font-family: var(--heading-font);
+    border-bottom: var(--secondary-color) solid 20px;
+    position: relative;
+}
+
+header img {
+    display: block;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero h1 {
+    font-family: var(--heading-font);
+    text-align: center;
+    padding: 30px 0;
+    margin: 0;
+}
+
+.hero p {
+    font-family: var(--body-font);
+    text-align: center;
+    padding: 18px;
+    color: var(--font-color);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-bottom: var(--secondary-color) solid 5px;
+}
+
+/***** HOME *****/
+
+.popular p {
+    text-align: center;
+    margin: 0 20px;
+}
+
 .section2 {
     display: flex;
     justify-content: center;
@@ -180,6 +173,12 @@ a img {
     margin-top: 5px;
     box-shadow: 1px 1px 4px #999;
 }
+
+.subsection h2 {
+    color: var(--secondary-font);
+}
+
+/***** CARDS *****/
 
 .cards {
     display: grid;
@@ -228,6 +227,8 @@ a img {
     box-shadow: 1px 1px 4px #999;
 }
  
+/***** BEACHES *****/
+
 .filter-row {
     display: flex;
     align-items: center;
@@ -244,12 +245,6 @@ a img {
     width: 100%;
 }
 
-#filters {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
 #filters button {
     background-color: var(--secondary-background);
     border: var(--font-color) solid 1px;
@@ -258,6 +253,8 @@ a img {
     padding: 4px;
     box-shadow: 1px 1px 4px #999;
 }
+
+/***** ACTIVITIES *****/
 
 .activities h2 {
     font-size: xx-large;
@@ -269,9 +266,11 @@ a img {
 
 .activity-card h3 {
     font-family: var(--heading-font);
+    color: var(--secondary-font);
     font-size: x-large;
     padding: 10px;
 }
+
 .activity-card img {
     border-radius: 5px;
 }
@@ -345,6 +344,18 @@ input[type="submit"] {
     box-shadow: 1px 1px 4px #999;
     font-size: large;
     font-weight: 700;
+}
+
+/***** FOOTER *****/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: black;
+    font-family: var(--body-font);
+    padding: 15px;
 }
 
 footer a {
