@@ -1,11 +1,11 @@
 export const descriptions = [
     {
         activity: "Dole Plantation",
-        desc: "Originally operated as a fruit stand beginning in 1950, Dole Plantation opened to the public as Hawaii’s “Pineapple Experience” in 1989. Today, Dole Plantation is one of Oahu’s most popular visitor attractions and welcomes more than one million visitors a year.Dole Plantation provides enjoyable activities for the entire family, including the Pineapple Express Train Tour, the Plantation Garden Tour, and the Pineapple Garden Maze. Also popular are informational displays and presentations, as well as our plantation country store offering a wide variety of Dole Plantation gifts, local favorites, foods and refreshments including the world - famous Dole Soft Serve!"
+        desc: "Originally operated as a fruit stand beginning in 1950, Dole Plantation opened to the public as Hawaiʻi’s “Pineapple Experience” in 1989. Today, Dole Plantation is one of Oʻahu’s most popular visitor attractions and welcomes more than one million visitors a year.Dole Plantation provides enjoyable activities for the entire family, including the Pineapple Express Train Tour, the Plantation Garden Tour, and the Pineapple Garden Maze. Also popular are informational displays and presentations, as well as our plantation country store offering a wide variety of Dole Plantation gifts, local favorites, foods and refreshments including the world - famous Dole Soft Serve!"
     },
     {
         activity: "Dolphin and You Tour",
-        desc: "Take in breathtaking views along Oahu’s most untouched coastline on an Oahu Dolphin Tour, where you will witness the magic of wild dolphins in a safe, respectful, and responsible way.After your dolphin watch, wrap up the day with a snorkeling stop in the clear Pacific waters to see Green Sea Turtles, tropical fish, and other vibrant marine life."
+        desc: "Take in breathtaking views along Oʻahu’s most untouched coastline on an Oahu Dolphin Tour, where you will witness the magic of wild dolphins in a safe, respectful, and responsible way.After your dolphin watch, wrap up the day with a snorkeling stop in the clear Pacific waters to see Green Sea Turtles, tropical fish, and other vibrant marine life."
     },
     {
         activity: "Honolulu Bottom Fishing Adventure",
@@ -16,8 +16,8 @@ export const descriptions = [
         desc: "If you came all this way, why not see it all? This adventure will allow you to see everything in “Jurassic Valley.” Your small-group tour in open-air vehicles with 16 guests or fewer will cover many miles over your 2.5-hour excursion. See everything from Jurassic World movie sets and other popular movie sites to amazing rainforests and waterfalls with ancient fish ponds, plus so much more. You will love every bumpy minute!"
     },
     {
-        activity: "Laie Hawaiʻi Temple Visitors’ Center",
-        desc: "Enjoy a tranquil moment during your busy sightseeing schedule. Enjoy the lush gardens on the Laie Hawaii Temple grounds, then come inside the visitors’ center to learn more about Jesus Christ and the purpose of temples."
+        activity: "Lā‘ie Hawaiʻi Temple Visitors’ Center",
+        desc: "Enjoy a tranquil moment during your busy sightseeing schedule. Enjoy the lush gardens on the Lā‘ie Hawaiʻi Temple grounds, then come inside the visitors’ center to learn more about Jesus Christ and the purpose of temples."
     },
     {
         activity: "Pearl Harbor USS Arizona Memorial",

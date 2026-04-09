@@ -70,7 +70,7 @@ export const popular = [
         buttonText: "View Activities"
     },
     {
-        place: "Laie Hawaiʻi Temple Visitors’ Center",
+        place: "Lā‘ie Hawaiʻi Temple Visitors’ Center",
         image: "images/laie-temple2.webp",
         description: "Enjoy the lush gardens and learn about Jesus Christ",
         link: "activities.html",

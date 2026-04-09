@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Oʻahu - Home</title>
     <meta name="author" content="Kristin Lindberg">
-    <meta name="description" content="Plan your trip to Oʻahu, Hawaii. Discover beautiful beaches and family friendly activities.">
+    <meta name="description" content="Plan your trip to Oʻahu, Hawaiʻi. Discover beautiful beaches and family friendly activities.">
     <meta property="og:title" content="Travel Oʻahu - Plan Your Trip">
     <meta property="og:description"
-        content="Discover beaches and activities on Oʻahu, Hawaii.">
+        content="Discover beaches and activities on Oʻahu, Hawaiʻi.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1633511090690-0b7f2fec0e8d?w=1200&h=630&fit=crop">
     <meta property="og:url" content="https://k-lindberg.github.io/wdd231/final/index.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +24,7 @@
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/popular.js" type="module"></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 <body>
     <header>
@@ -51,6 +52,16 @@
         </section>
 
         <section class="section2">
+            <div class="subsection">
+                
+                <img id="weather-icon" src="#" alt="#">
+                <p>Weather for Lā‘ie, Hawaiʻi: <span id="current-temp"></span>&deg;F</p>
+                <p><span id="desc"></span></p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind: <span id="wind"></span>mph</p>
+                <p>Sunrise: <span id="sunrise"></span></p>
+                <p>Sunset: <span id="sunset"></span></p>
+            </div>
             <div class="subsection">
                 <a href="beaches.html">
                     <img src="images/beach-icon.svg" alt="Beach Icon" loading="lazy" width="75" height="75">
