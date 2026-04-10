@@ -24,7 +24,8 @@
         flex: 1 1 100%;
     }
 
-    .section2 {
+    .section {
+        display: flex;
         justify-content: space-between;
     }
 
@@ -59,13 +60,8 @@
         grid-template-columns: 2fr 1fr;
     }
 
-    .activities {
-        
-    }
-
     form {
         max-width: 400px;
-        margin: 20px auto;
         padding: 20px;
     }
 }

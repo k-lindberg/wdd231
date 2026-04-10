@@ -9,7 +9,7 @@
     <meta property="og:title" content="Travel Oʻahu - Plan Your Trip">
     <meta property="og:description"
         content="Discover beaches and activities on Oʻahu, Hawaiʻi.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1633511090690-0b7f2fec0e8d?w=1200&h=630&fit=crop">
+    <meta property="og:image" content="images/meta-image.webp">
     <meta property="og:url" content="https://k-lindberg.github.io/wdd231/final/index.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,6 +25,7 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/popular.js" type="module"></script>
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/visits.js" defer></script>
 </head>
 <body>
     <header>
@@ -51,9 +52,8 @@
             </p>
         </section>
 
-        <section class="section2">
-            <div class="subsection">
-                
+        <section class="section">
+            <div class="subsection1">
                 <img id="weather-icon" src="#" alt="#">
                 <p>Weather for Lā‘ie, Hawaiʻi: <span id="current-temp"></span>&deg;F</p>
                 <p><span id="desc"></span></p>
@@ -62,14 +62,14 @@
                 <p>Sunrise: <span id="sunrise"></span></p>
                 <p>Sunset: <span id="sunset"></span></p>
             </div>
-            <div class="subsection">
+            <div class="subsection2">
                 <a href="beaches.html">
                     <img src="images/beach-icon.svg" alt="Beach Icon" loading="lazy" width="75" height="75">
                 <h2>Beaches</h2>
                 <p>Whether you’d like to ride the waves or find the perfect spot to lounge on the sand, there’s a beach in Oʻahu to satisfy your desires.</p>
                 </a>
             </div>
-            <div class="subsection">
+            <div class="subsection2">
                 <a href="activities.html">
                     <img src="images/activity-icon.svg" alt="Activity Icon" loading="lazy" width="75" height="75">
                 <h2>Activities</h2>
@@ -88,6 +88,7 @@
 
     </main>
     <footer>
+        <div id="visits"></div>
         <p>
             &copy;<span id="currentyear"></span> | Kristin Lindberg | Utah
         </p>

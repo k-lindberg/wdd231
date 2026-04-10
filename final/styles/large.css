@@ -11,12 +11,26 @@
         font-size: 2rem;
     }
 
-    .section2 {
+    .section {
         margin: 30px;
         gap: 30px;
     }
 
     .cards {
         gap: 30px;
+    }
+
+    .activity-layout {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .activities {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column: 1 / 3;
+    }
+
+    form {
+        grid-column: 3 / 4;
     }
 }
