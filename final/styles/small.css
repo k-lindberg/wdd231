@@ -7,6 +7,7 @@
     --secondary-color: #FF9B70;
     --font-color: #1A1A1E;
     --secondary-font: #0C5C5F;
+    --box-shadow: 1px 1px 4px #999;
 }   
 
 * {
@@ -181,7 +182,7 @@ header img {
     background-color: var(--background-color);
     border-radius: 5px;
     margin-top: 5px;
-    box-shadow: 1px 1px 4px #999;
+    box-shadow: var(--box-shadow);
 }
 
 /***** CARDS *****/
@@ -230,7 +231,7 @@ header img {
     margin: 12px 0 20px 0;
     display: inline-block;
     font-weight: 900;
-    box-shadow: 1px 1px 4px #999;
+    box-shadow: var(--box-shadow);
 }
  
 /***** BEACHES *****/
@@ -257,7 +258,7 @@ header img {
     border-radius: 2px;
     margin: 5px;
     padding: 4px;
-    box-shadow: 1px 1px 4px #999;
+    box-shadow: var(--box-shadow);
 }
 
 /***** ACTIVITIES *****/
@@ -290,7 +291,7 @@ header img {
     font-weight: 600;
     margin-top: 8px;
     cursor: pointer;
-    box-shadow: 1px 1px 4px #999;
+    box-shadow: var(--box-shadow);
     color: var(--font-color);
 }
 
@@ -335,11 +336,11 @@ dialog button {
     font-weight: 900;
     cursor: pointer;
     background-color: var(--primary-color);
-    color: var(--secondary-font-color);
+    color: var(--secondary-font);
 }
 
 dialog button:hover {
-    background-color: var(--secondary-font-color);
+    background-color: var(--secondary-font);
     color: var(--primary-color);
 }
 
@@ -360,8 +361,10 @@ form h2{
 form .checkbox {
     background-color: var(--background-color);
     padding: 5px;
-    box-shadow: 1px 1px 4px #999;
+    box-shadow: var(--box-shadow);
     border: var(--font-color) solid 1px;
+    border-radius: 6px;
+    display: grid;
 }
 
 form input[type="text"],
@@ -372,12 +375,7 @@ form input[type="email"] {
     border-radius: 5px;
     border: var(--font-color) solid 1px;
     margin-bottom: 12px;
-    box-shadow: 1px 1px 4px #999;
-}
-
-.checkbox {
-    border-radius: 6px;
-    display: grid;
+    box-shadow: var(--box-shadow);
 }
 
 form input[type="checkbox"] {
@@ -411,7 +409,7 @@ input[type="submit"] {
     max-width: 400px;
     margin: 2%;
     margin-top: 20px;
-    box-shadow: 1px 1px 4px #999;
+    box-shadow: var(--box-shadow);
     font-size: large;
     font-weight: 700;
     cursor: pointer;
